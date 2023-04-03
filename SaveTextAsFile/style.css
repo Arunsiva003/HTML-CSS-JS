@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(47, 47, 218, 0.911);
+    min-height:100vh;
+}
+
+.wrapper{
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 25px 40px;
+}
+
+.wrapper  :where(textarea, input, select, button){
+    width:100%;
+    outline: none;
+    border:none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.wrapper textarea{
+    height: 270px;
+    padding: 8px 13px;
+    border:1px solid #ccc;
+}
+
+.wrapper .file-options{
+    display:flex;
+    margin:10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-options .option{
+    width: calc(100%/2 - 8px);
+}
+
+.option :where(input, .select-menu){
+    height:50px;
+    padding:0 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border:1px solid #bfbfbf
+}
+
+.option .select-menu select{
+    height:100%;
+    background: none;
+}
+
+.wrapper .save-btn{
+    color:white;
+    margin-top:20px;
+    padding:16px 0;
+    cursor: pointer;
+    background-color: rgba(47, 47, 218, 0.911);
+
+}
+
+h1{
+    margin:20px;
+    font-family: cursive;
+}
+
+a{
+    text-decoration: solid;
+    color: black;
+    font-weight: bolder;
+    font-family: sans-serif;
+    transform: matrix3d(2,3,4);
+}
+
+
+@media  (max-width:420px){
+    *{
+        margin:10px;
+    }
+    h1{
+        display: none;
+    }
+    .wrapper .file-options{
+        display:flex;
+        flex-direction: column;
+        padding:0;  
+    }
+}
