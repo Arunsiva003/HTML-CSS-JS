@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="toDoList.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1
+        style="
+    margin-right: 0px;
+    height: 37px;
+    width: 150px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+">Task List</h1>
+        <form id="new-task-form">
+            <input 
+            maxlength="80"
+            type="text"
+            id="new-task-input"
+            placeholder="What is the plan in your mind?"/>
+            <input type="submit"
+            id="new-task-submit"
+            value="Add Task"/>
+        </form>
+    </header>
+
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+                <div id="tasks">
+                    <!-- <div class="task">
+                        <div class="content">
+                            <input 
+                            type="text"
+                            class="text"
+                            value="bla bla bla"
+                            readonly/>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+                </div>
+        </section>
+    </main>
+    </div>
+ <script src="toDoList.js"></script>
+
+</body>
+</html>
